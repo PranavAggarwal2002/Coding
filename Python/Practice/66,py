@@ -1,0 +1,36 @@
+def classify(t):
+    if t < 10:
+        return "it's very cool"
+    elif t <= 20:
+        return "it's cold"
+    else:
+        return "it's warm"
+
+# input
+t1, t2 = map(int, input().split())
+
+# classification
+print(classify(t1))
+print(classify(t2))
+
+# average
+avg = (t1 + t2) / 2
+print(avg)
+
+# reverse order
+print(t2, t1)
+
+#-----------------------------------------------------------
+
+arr = list(map(int,input().split()))
+for i in arr:
+    if i < 10:
+        print("it's very cool")
+    elif i <= 20:
+        print("it's cold")
+    else:
+        print("it's warm")
+
+ans = arr[0] + arr[1]
+print(f"{ans/2:.2f}")
+print(f"{arr[1]}{arr[0]}")
