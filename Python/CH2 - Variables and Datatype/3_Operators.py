@@ -4,6 +4,7 @@ b=7
 c=a+b
 d=a*b
 print(c)
+print(d)
 # Assignment operators:  =, +=, -= etc. 
 e=4-2 #Assign 4-2 to e
 f=5
