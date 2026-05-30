@@ -1,0 +1,53 @@
+/* Apply red theme and basic reset */
+header {
+    background-color: #e23744;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f8;
+    color: #333;
+}
+
+header div:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main div {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d62839;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #e23744;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}

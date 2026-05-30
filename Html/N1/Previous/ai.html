@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Websites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #clock {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        a {
+            display: block;
+            margin: 10px;
+            font-size: 18px;
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Favorite Websites</h1>
+    <div id="clock">Loading clock...</div>
+
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+    <a href="https://www.facebook.com" target="_blank">Visit Facebook</a>
+    <a href="https://www.youtube.com" target="_blank">Visit YouTube</a>
+    <a href="https://www.twitter.com" target="_blank">Visit Twitter (X)</a>
+    <a href="https://www.instagram.com" target="_blank">Visit Instagram</a>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('clock').textContent = "Current Time: " + timeString;
+        }
+
+        // Run clock once immediately, then update every second
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+    
+</body>
+</html>
